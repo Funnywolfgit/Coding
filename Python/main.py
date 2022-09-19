@@ -26,6 +26,6 @@ current_price = df.loc[df["Date"] == current_month][current_hour]
 current_kwh_price = float(current_price.reset_index(drop=True)[0].replace(",", "."))
 
 if current_kwh_price <= 3 :
-    print(f"Low cost power at {current_kwh_price} kr/kwh")
+    print(f"Low cost power at {current_kwh_price} kr/kwh!")
 else :
-    print(f"High cost power at {current_kwh_price} kr/kwh")
+    print(f"High cost power at {current_kwh_price} kr/kwh!")
